@@ -5,7 +5,8 @@ const internal_1 = require("../../core/internal");
 class EnumBuilder extends builder_1.SchemaBuilder {
     constructor(...items) {
         super();
-        this[internal_1.Serializable.data] = { enum: items };
+        this[internal_1.Serializable.data] = { type: 'string',
+            enum: items };
     }
 }
 exports.default = EnumBuilder;

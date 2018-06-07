@@ -9,8 +9,8 @@ export declare type SerializableTree<T extends SchemaTree> = {
     [P in keyof T]: T[P] | Serializable;
 };
 export declare class Serializable {
-    static readonly serializer: symbol;
-    static readonly data: symbol;
+    static readonly serializer: unique symbol;
+    static readonly data: unique symbol;
     private isSerialized;
     constructor(serializer?: Serializer);
 }

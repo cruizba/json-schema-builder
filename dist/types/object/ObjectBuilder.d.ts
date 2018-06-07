@@ -4,7 +4,7 @@ import DataReference from '../../references/data/DataReference';
 import { Properties } from './schema';
 export default class ObjectBuilder extends SchemaBuilder {
     constructor(properties?: Properties);
-    private requireHelper();
+    private requireHelper;
     maxProperties(value: number | DataReference): ObjectBuilder;
     minProperties(value: number | DataReference): ObjectBuilder;
     required(data: DataReference): ObjectBuilder;

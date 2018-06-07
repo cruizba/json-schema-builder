@@ -5,7 +5,7 @@ import { Serializable } from './core/internal';
 export declare enum SchemaVersion {
     DRAFT_4 = "http://json-schema.org/draft-04/schema#",
     DRAFT_6 = "http://json-schema.org/draft-06/schema#",
-    DRAFT_7 = "http://json-schema.org/draft-07/schema#",
+    DRAFT_7 = "http://json-schema.org/draft-07/schema#"
 }
 export interface BuilderOptions {
     version: SchemaVersion;

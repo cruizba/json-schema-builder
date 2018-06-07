@@ -4,6 +4,7 @@ import { Serializable } from '../../core/internal';
 export default class EnumBuilder extends SchemaBuilder {
     constructor(...items: Array<JsonValue>) {
         super();
-        this[Serializable.data] = { enum: items };
+        this[Serializable.data] = { type: 'string',
+            enum: items };
     }
 }
